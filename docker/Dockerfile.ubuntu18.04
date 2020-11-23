@@ -16,7 +16,7 @@ ARG DCGM_VERSION
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libcap2-bin \
     libgomp1 \
-    wget && \
+    wget \
     curl && \
     rm -rf /var/lib/apt/lists/* && \
     wget --no-check-certificate https://developer.download.nvidia.com/compute/redist/dcgm/${DCGM_VERSION}/DEBS/datacenter-gpu-manager_${DCGM_VERSION}_amd64.deb && \
