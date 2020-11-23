@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-DOCKER   ?= buildx
+DOCKER   ?= docker buildx
 MKDIR    ?= mkdir
-REGISTRY ?= nvidia
+REGISTRY ?= longbao128
 
 DCGM_VERSION   := 2.0.13
 GOLANG_VERSION := 1.14.2
