@@ -25,7 +25,7 @@ FULL_VERSION   := $(DCGM_VERSION)-$(VERSION)
 all: ubuntu18.04 ubuntu20.04 ubi8
 
 binary:
-	go build -o dcgm-exporter github.com/NVIDIA/gpu-monitoring-tools/pkg
+	go build -v -o dcgm-exporter github.com/NVIDIA/gpu-monitoring-tools/pkg
 
 install: binary
 	install -m 557 dcgm-exporter /usr/bin/dcgm-exporter
