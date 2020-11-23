@@ -42,4 +42,4 @@ jobs:
         name: Build and push
         run: make ubuntu18.04
         env:
-          DOCKER_BUILDKIT=1
+          DOCKER_BUILDKIT: 1
