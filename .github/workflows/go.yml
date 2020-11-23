@@ -1,4 +1,4 @@
-name: Go
+name: Testing
 
 on:
   push:
@@ -21,5 +21,5 @@ jobs:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v2
 
-    - name: Make binary
-      run: make binary
+    - name: Make Docker Image
+      run: make ubuntu18.04
