@@ -28,9 +28,9 @@ jobs:
       - 
         name: List file
         run: ls -la
-        
+
       - name: List docker dir
-        run: ls -la ./docker
+        run: ls -la ..
 
       -
         name: Build and push
