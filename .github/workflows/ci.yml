@@ -5,7 +5,7 @@ on:
     branches: master
 
 jobs:
-  github-cache:
+  build:
     runs-on: ubuntu-latest
     steps:
       -

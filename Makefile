@@ -64,6 +64,8 @@ ubuntu18.04:
 		--build-arg "GOLANG_VERSION=$(GOLANG_VERSION)" \
 		--build-arg "DCGM_VERSION=$(DCGM_VERSION)" \
 		--tag "$(REGISTRY)/dcgm-exporter:$(FULL_VERSION)-ubuntu18.04" \
+		--cache-from type=local,src=/tmp/.buildx-cache \
+		--cache-to type=local,dest=/tmp/.buildx-cache \
 		--file docker/Dockerfile.ubuntu18.04 .
 
 ubi8:
