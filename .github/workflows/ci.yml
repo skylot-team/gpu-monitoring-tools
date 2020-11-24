@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-18.04
     steps:
       -
         name: Set up Docker Buildx
@@ -28,9 +28,6 @@ jobs:
       - 
         name: Check out code
         uses: actions/checkout@v2
-
-
-        
       # -
       #   name: Build and push
       #   uses: docker/build-push-action@v2
