@@ -1,4 +1,4 @@
-ARG GOLANG_VERSION
+ARG GOLANG_VERSION=1.14.2
 FROM golang:$GOLANG_VERSION AS builder
 WORKDIR /go/src/github.com/NVIDIA/gpu-monitoring-tools
 
@@ -12,7 +12,7 @@ LABEL io.k8s.display-name="NVIDIA DCGM Exporter"
 COPY --from=builder /go/src/github.com/NVIDIA/gpu-monitoring-tools/dcgm-exporter /usr/bin/
 COPY etc/dcgm-exporter /etc/dcgm-exporter
 
-ARG DCGM_VERSION
+ARG DCGM_VERSION=2.0.13
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libcap2-bin \
     libgomp1 \
