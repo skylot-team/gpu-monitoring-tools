@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./docker/Dockerfile.ubuntu18.04
       buildContext: .
-      tag: gpu-monitor
+      tag: longbao128/gpu-monitor
       pushRemote: true
       registry: index.docker.io
 timeout: 60
