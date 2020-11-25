@@ -1,9 +1,7 @@
 language: generic
 
 sudo: true
-
 dist: xenial
-
 services:
   - docker
 
