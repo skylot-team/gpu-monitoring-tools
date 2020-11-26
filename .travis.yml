@@ -4,7 +4,6 @@ sudo: true
 dist: xenial
 services:
   - docker
-
 go:
   - 1.14
 
